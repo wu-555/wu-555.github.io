@@ -398,6 +398,9 @@
 <blockquote>
 <p>该笔记对应谢希仁的《计算机网络》(第七版)，仅为期末复习准备</p>
 </blockquote>
+<hr>
+<p>[TOC]</p>
+<hr>
 <h2 id="1-物理层"><a href="#1-物理层" class="headerlink" title="1.物理层"></a>1.物理层</h2><h3 id="1-1-概念"><a href="#1-1-概念" class="headerlink" title="1.1 概念"></a>1.1 概念</h3><p>物理层考虑的是怎样才能在连接各种计算机的传输媒体上传输数据比特流，而不是指具体的传输媒体。</p>
 <h3 id="1-2-作用"><a href="#1-2-作用" class="headerlink" title="1.2 作用"></a>1.2 作用</h3><p>物理层的作用正是要尽可能地屏蔽掉传输媒体和通信手段的差异，使物理层上面的数据链路层感觉不到这些差异。</p>
 <h3 id="1-3-任务"><a href="#1-3-任务" class="headerlink" title="1.3 任务"></a>1.3 任务</h3><p>物理层的主要任务描述为确定与传输媒体的接口有关的一些特性，即：机械特性、电气特性、功能特性、过程特性。</p>
@@ -411,7 +414,7 @@
 <li>双向同时通信（全双工通信）：通信的双方可以同时发送和接收信息。</li>
 </ul>
 <blockquote>
-<p>来自信源的信号称为基带信号，因为其一般包含较多低频成分，甚至直流成分，而很多信道不能传输这种低频信号和直流信号，所以要对其进行调制。</p>
+<p>体来自信源的信号称为基带信号，因为其一般包含较多低频成分，甚至直流成分，而很多信道不能传输这种低频信号和直流信号，所以要对其进行调制。</p>
 </blockquote>
 <h5 id="1-4-3-调制分类"><a href="#1-4-3-调制分类" class="headerlink" title="1.4.3 调制分类"></a>1.4.3 调制分类</h5><ul>
 <li>基带调制：对基带信号的波形进行调制，使它能够与信道特性相适应。变换后的信号仍然是基带信号。由于这种基带调制是把数字信号转换为另一种形式的数字信号，因此也叫编码。</li>
@@ -420,7 +423,8 @@
 <blockquote>
 <p>一般来说，习惯把基带调制叫编码，带通调制叫调制。</p>
 </blockquote>
-<h5 id="1-4-4-编码方法"><a href="#1-4-4-编码方法" class="headerlink" title="1.4.4 编码方法"></a>1.4.4 编码方法</h5><ul>
+<h5 id="1-4-4-编码方法"><a href="#1-4-4-编码方法" class="headerlink" title="1.4.4 编码方法"></a>1.4.4 编码方法</h5><p><img src="/home/wtc/blog/source/source_pic/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.png" class="lazyload" data-srcset="/home/wtc/blog/source/source_pic/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.png" srcset="data:image/png;base64,666" alt="数字信号常用的编码方式"></p>
+<ul>
 <li>不归零制：正电平代表1，负电平代表0。</li>
 <li>归零制：正脉冲代表1，负脉冲代表0。</li>
 <li>曼彻斯特编码：位周期中心的向上跳变代表0，位周期中心的向下跳变代表1。</li>
@@ -429,7 +433,8 @@
 <blockquote>
 <p>详见《计算机网络》P44。</p>
 </blockquote>
-<h5 id="1-4-5-调制方法"><a href="#1-4-5-调制方法" class="headerlink" title="1.4.5 调制方法"></a>1.4.5 调制方法</h5><ul>
+<h5 id="1-4-5-调制方法"><a href="#1-4-5-调制方法" class="headerlink" title="1.4.5 调制方法"></a>1.4.5 调制方法</h5><p><img src="/home/wtc/blog/source/source_pic/%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%B8%89%E7%A7%8D%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95.png" class="lazyload" data-srcset="/home/wtc/blog/source/source_pic/%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%B8%89%E7%A7%8D%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95.png" srcset="data:image/png;base64,666" alt="最基本的三种调制方法"></p>
+<ul>
 <li>调幅（AM）：载波的振幅随基带数字信号而变化。例如，0或1分别对应于无载波或有载波输出。</li>
 <li>调频（FM）：即载波的频率随基带数字信号而变化。例如，0或1分别对应于频率f1或f2。</li>
 <li>调相（PM）：即载波的初始相位随基带数字信号而变化。例如，0或1分别对应于相位0度或180度。</li>
@@ -440,10 +445,32 @@
 <h5 id="1-4-6-信道的极限容量"><a href="#1-4-6-信道的极限容量" class="headerlink" title="1.4.6 信道的极限容量"></a>1.4.6 信道的极限容量</h5><p>信道上传输数字信号如果速度过快会导致信号失真，所以不能一味的要求速度，必须保证传输信号的能识别度。</p>
 <ol>
 <li><h6 id="信号能够通过的频率范围"><a href="#信号能够通过的频率范围" class="headerlink" title="信号能够通过的频率范围"></a>信号能够通过的频率范围</h6><p>如果信号中的高频分量在传输时受到衰减，那么在接收端收到的波形前沿和后沿就变得不那么陡峭了，每一个码元所占的时间界限也不再是很明确的，而是前后都拖了“尾巴”。这样，在接收端收到的信号波形就失去了码元之间的清晰界限。这种现象叫码间串扰。</p>
-<p>奈奎斯特的奈氏准则</p>
+<p>奈奎斯特的奈氏准则的大概意思：在任何信道中，码元的传输速率是有上限的，传输速率超过此上限，就会出现严重的码间串扰问题，使接收端对码元的识别成为不可能。</p>
 </li>
-<li><h6 id="信噪比"><a href="#信噪比" class="headerlink" title="信噪比"></a>信噪比</h6></li>
+<li><h6 id="信噪比"><a href="#信噪比" class="headerlink" title="信噪比"></a>信噪比</h6><p>信噪比指的是信号的平均功率和噪声的平均功率之比，记为S/N，并用分贝（dB）作为度量单位。公式：</p>
+<p><img src="/home/wtc/blog/source/source_pic/%E4%BF%A1%E5%99%AA%E6%AF%94%E5%85%AC%E5%BC%8F.png" class="lazyload" data-srcset="/home/wtc/blog/source/source_pic/%E4%BF%A1%E5%99%AA%E6%AF%94%E5%85%AC%E5%BC%8F.png" srcset="data:image/png;base64,666" alt="信噪比公式"></p>
+<blockquote>
+<p>例如S/N=10，信噪比为10dB；S/N=1000，信噪比为30dB。</p>
+</blockquote>
+</li>
+<li><p>香农公式</p>
+<p>香农公式给出了信道的极限信息传输速率C，表明信道的带宽或信道中的信噪比越大，信息的极限传输速率就越高。公式：</p>
+<p><img src="/home/wtc/blog/source/source_pic/%E9%A6%99%E5%86%9C%E5%85%AC%E5%BC%8F.png" class="lazyload" data-srcset="/home/wtc/blog/source/source_pic/%E9%A6%99%E5%86%9C%E5%85%AC%E5%BC%8F.png" srcset="data:image/png;base64,666" alt="香农公式"></p>
+<blockquote>
+<p>W为信道的带宽（以Hz为单位）;S为信道内所传信号的平均功率，N为信号内部的高斯噪声功率。</p>
+<p>香农公式的意义在于：只要信息传输速率低于信道的极限传输速率，就一定存在某种方法来实现无差错的传输。</p>
+</blockquote>
+</li>
 </ol>
+<h5 id="1-5-信道复用"><a href="#1-5-信道复用" class="headerlink" title="1.5 信道复用"></a>1.5 信道复用</h5><p>频分复用FDM：所有的用户在同样的时间占用不同的带宽资源（这里的“带宽”是频率带宽而不是数据的发送速率）。</p>
+<p>时分复用TDM：所有用户在不同的时间占用同样的频带带宽。</p>
+<p>统计时分复用STDM：改进的时分复用。</p>
+<p>波分复用WDM：光的频分复用。</p>
+<p><strong>码分复用CDM</strong>：更常用的名词是码分多址CDMA。每一个用户可以在同样的时间使用同样的频带进行通信。由于各用户使用经特殊挑选的不同码型，因此各用户之间不会造成干扰。</p>
+<blockquote>
+<p>码分复用的计算题目中，会给出几个站的码片序列T和一个收到的码片序列S，对T和S进行正交，结果为1则该站发送1，结果为0则该站无发送，结果为-1则该站发送0。 详见P68的2-16题。</p>
+</blockquote>
+<hr>
 
   
   
@@ -478,7 +505,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-09T16:00:50+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-12-09T18:29:18+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Dec 9, 2020</p>
@@ -590,7 +617,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-text">1.物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%A6%82%E5%BF%B5"><span class="toc-text">1.1 概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E4%BD%9C%E7%94%A8"><span class="toc-text">1.2 作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E4%BB%BB%E5%8A%A1"><span class="toc-text">1.3 任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E4%B8%80%E4%BA%9B%E4%BF%A1%E9%81%93%E7%9B%B8%E5%85%B3%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">1.4 一些信道相关的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-1-%E4%BF%A1%E9%81%93%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">1.4.1 信道的概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-2-%E4%BF%A1%E9%81%93%E4%BC%A0%E8%BE%93%E4%BF%A1%E6%81%AF%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-text">1.4.2 信道传输信息的方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-3-%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB"><span class="toc-text">1.4.3 调制分类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-4-%E7%BC%96%E7%A0%81%E6%96%B9%E6%B3%95"><span class="toc-text">1.4.4 编码方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-5-%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95"><span class="toc-text">1.4.5 调制方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-6-%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F"><span class="toc-text">1.4.6 信道的极限容量</span></a></li></ol></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-text">1.物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%A6%82%E5%BF%B5"><span class="toc-text">1.1 概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E4%BD%9C%E7%94%A8"><span class="toc-text">1.2 作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E4%BB%BB%E5%8A%A1"><span class="toc-text">1.3 任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E4%B8%80%E4%BA%9B%E4%BF%A1%E9%81%93%E7%9B%B8%E5%85%B3%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">1.4 一些信道相关的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-1-%E4%BF%A1%E9%81%93%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">1.4.1 信道的概念</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-2-%E4%BF%A1%E9%81%93%E4%BC%A0%E8%BE%93%E4%BF%A1%E6%81%AF%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-text">1.4.2 信道传输信息的方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-3-%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB"><span class="toc-text">1.4.3 调制分类</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-4-%E7%BC%96%E7%A0%81%E6%96%B9%E6%B3%95"><span class="toc-text">1.4.4 编码方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-5-%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95"><span class="toc-text">1.4.5 调制方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-4-6-%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F"><span class="toc-text">1.4.6 信道的极限容量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-5-%E4%BF%A1%E9%81%93%E5%A4%8D%E7%94%A8"><span class="toc-text">1.5 信道复用</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </section>
 
