@@ -394,49 +394,51 @@
 
 
   
-  <h1><span id="计算机网络五层结构复习笔记">《计算机网络五层结构复习笔记》</span></h1>
+  <h1><span id="ji-suan-ji-wang-luo-wu-ceng-jie-gou-fu-xi-bi-ji">《计算机网络五层结构复习笔记》</span><a href="#ji-suan-ji-wang-luo-wu-ceng-jie-gou-fu-xi-bi-ji" class="header-anchor"></a></h1>
 <hr>
 <blockquote>
 <p>该笔记对应谢希仁的《计算机网络》(第七版)，仅为期末复习准备</p>
 </blockquote>
 <hr>
+<div class="toc">
 <!-- toc -->
 <ul>
-<li><a href="#1%E7%89%A9%E7%90%86%E5%B1%82">1.物理层</a>
+<li><a href="#1-wu-li-ceng">1.物理层</a>
 <ul>
-<li><a href="#11-%E6%A6%82%E5%BF%B5">1.1 概念</a></li>
-<li><a href="#12-%E4%BD%9C%E7%94%A8">1.2 作用</a></li>
-<li><a href="#13-%E4%BB%BB%E5%8A%A1">1.3 任务</a></li>
-<li><a href="#14-%E4%B8%80%E4%BA%9B%E4%BF%A1%E9%81%93%E7%9B%B8%E5%85%B3%E7%9A%84%E6%A6%82%E5%BF%B5">1.4 一些信道相关的概念</a>
+<li><a href="#1-1-gai-nian">1.1 概念</a></li>
+<li><a href="#1-2-zuo-yong">1.2 作用</a></li>
+<li><a href="#1-3-ren-wu">1.3 任务</a></li>
+<li><a href="#1-4-yi-xie-xin-dao-xiang-guan-de-gai-nian">1.4 一些信道相关的概念</a>
 <ul>
-<li><a href="#141-%E4%BF%A1%E9%81%93%E7%9A%84%E6%A6%82%E5%BF%B5">1.4.1 信道的概念</a></li>
-<li><a href="#142-%E4%BF%A1%E9%81%93%E4%BC%A0%E8%BE%93%E4%BF%A1%E6%81%AF%E7%9A%84%E6%96%B9%E5%BC%8F">1.4.2 信道传输信息的方式</a></li>
-<li><a href="#143-%E8%B0%83%E5%88%B6%E5%88%86%E7%B1%BB">1.4.3 调制分类</a></li>
-<li><a href="#144-%E7%BC%96%E7%A0%81%E6%96%B9%E6%B3%95">1.4.4 编码方法</a></li>
-<li><a href="#145-%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95">1.4.5 调制方法</a></li>
-<li><a href="#146-%E4%BF%A1%E9%81%93%E7%9A%84%E6%9E%81%E9%99%90%E5%AE%B9%E9%87%8F">1.4.6 信道的极限容量</a></li>
+<li><a href="#1-4-1-xin-dao-de-gai-nian">1.4.1 信道的概念</a></li>
+<li><a href="#1-4-2-xin-dao-chuan-shu-xin-xi-de-fang-shi">1.4.2 信道传输信息的方式</a></li>
+<li><a href="#1-4-3-diao-zhi-fen-lei">1.4.3 调制分类</a></li>
+<li><a href="#1-4-4-bian-ma-fang-fa">1.4.4 编码方法</a></li>
+<li><a href="#1-4-5-diao-zhi-fang-fa">1.4.5 调制方法</a></li>
+<li><a href="#1-4-6-xin-dao-de-ji-xian-rong-liang">1.4.6 信道的极限容量</a></li>
 </ul>
 </li>
-<li><a href="#15-%E4%BF%A1%E9%81%93%E5%A4%8D%E7%94%A8">1.5 信道复用</a></li>
+<li><a href="#1-5-xin-dao-fu-yong">1.5 信道复用</a></li>
 </ul>
 </li>
 </ul>
 <!-- tocstop -->
+</div>
 <hr>
-<h2><span id="1物理层">1.物理层</span></h2>
-<h3><span id="11-概念">1.1 概念</span></h3>
+<h2><span id="1-wu-li-ceng">1.物理层</span><a href="#1-wu-li-ceng" class="header-anchor"></a></h2>
+<h3><span id="1-1-gai-nian">1.1 概念</span><a href="#1-1-gai-nian" class="header-anchor"></a></h3>
 <p>物理层考虑的是怎样才能在连接各种计算机的传输媒体上传输数据比特流，而不是指具体的传输媒体。</p>
-<h3><span id="12-作用">1.2 作用</span></h3>
+<h3><span id="1-2-zuo-yong">1.2 作用</span><a href="#1-2-zuo-yong" class="header-anchor"></a></h3>
 <p>物理层的作用正是要尽可能地屏蔽掉传输媒体和通信手段的差异，使物理层上面的数据链路层感觉不到这些差异。</p>
-<h3><span id="13-任务">1.3 任务</span></h3>
+<h3><span id="1-3-ren-wu">1.3 任务</span><a href="#1-3-ren-wu" class="header-anchor"></a></h3>
 <p>物理层的主要任务描述为确定与传输媒体的接口有关的一些特性，即：机械特性、电气特性、功能特性、过程特性。</p>
 <blockquote>
 <p>详见《计算机网络》P41。</p>
 </blockquote>
-<h3><span id="14-一些信道相关的概念">1.4 一些信道相关的概念</span></h3>
-<h4><span id="141-信道的概念">1.4.1 信道的概念</span></h4>
+<h3><span id="1-4-yi-xie-xin-dao-xiang-guan-de-gai-nian">1.4 一些信道相关的概念</span><a href="#1-4-yi-xie-xin-dao-xiang-guan-de-gai-nian" class="header-anchor"></a></h3>
+<h4><span id="1-4-1-xin-dao-de-gai-nian">1.4.1 信道的概念</span><a href="#1-4-1-xin-dao-de-gai-nian" class="header-anchor"></a></h4>
 <p>信道一般表示某一方向的传送信息的媒体。</p>
-<h4><span id="142-信道传输信息的方式">1.4.2 信道传输信息的方式</span></h4>
+<h4><span id="1-4-2-xin-dao-chuan-shu-xin-xi-de-fang-shi">1.4.2 信道传输信息的方式</span><a href="#1-4-2-xin-dao-chuan-shu-xin-xi-de-fang-shi" class="header-anchor"></a></h4>
 <ul>
 <li>单向通信（单工通信）：只能有一个方向的通信而没有反方向的交互。无线电广播或有线电广播以及电视广播就属于这种类型。</li>
 <li>双向交替通信（半双工通信）：通信的双方都可以发送消息，但不能双方同时发送，也不能同时接收。这种通信方式是一方发送另一方接收，过一段时间后可以再反过来。</li>
@@ -445,7 +447,7 @@
 <blockquote>
 <p>体来自信源的信号称为基带信号，因为其一般包含较多低频成分，甚至直流成分，而很多信道不能传输这种低频信号和直流信号，所以要对其进行调制。</p>
 </blockquote>
-<h4><span id="143-调制分类">1.4.3 调制分类</span></h4>
+<h4><span id="1-4-3-diao-zhi-fen-lei">1.4.3 调制分类</span><a href="#1-4-3-diao-zhi-fen-lei" class="header-anchor"></a></h4>
 <ul>
 <li>基带调制：对基带信号的波形进行调制，使它能够与信道特性相适应。变换后的信号仍然是基带信号。由于这种基带调制是把数字信号转换为另一种形式的数字信号，因此也叫编码。</li>
 <li>带通调制：使用载波进行调制，将基带信号的频率范围搬移到较高的频段，并转化为模拟信号，这样就能更好地在模拟信道（传输模拟信号的信道称为模拟信道）中传输。经过载波调制后的信号称为带通信号。</li>
@@ -453,7 +455,7 @@
 <blockquote>
 <p>一般来说，习惯把基带调制叫编码，带通调制叫调制。</p>
 </blockquote>
-<h4><span id="144-编码方法">1.4.4 编码方法</span></h4>
+<h4><span id="1-4-4-bian-ma-fang-fa">1.4.4 编码方法</span><a href="#1-4-4-bian-ma-fang-fa" class="header-anchor"></a></h4>
 <p><img src="/images/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.png" class="lazyload" data-srcset="/images/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%B8%B8%E7%94%A8%E7%9A%84%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F.png" srcset="data:image/png;base64,666" alt="数字信号常用的编码方式"></p>
 <ul>
 <li>不归零制：正电平代表1，负电平代表0。</li>
@@ -464,7 +466,7 @@
 <blockquote>
 <p>详见《计算机网络》P44。</p>
 </blockquote>
-<h4><span id="145-调制方法">1.4.5 调制方法</span></h4>
+<h4><span id="1-4-5-diao-zhi-fang-fa">1.4.5 调制方法</span><a href="#1-4-5-diao-zhi-fang-fa" class="header-anchor"></a></h4>
 <p><img src="/images/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B/%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%B8%89%E7%A7%8D%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95.png" class="lazyload" data-srcset="/images/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BA%94%E5%B1%82%E7%BB%93%E6%9E%84%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%8B/%E6%9C%80%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%B8%89%E7%A7%8D%E8%B0%83%E5%88%B6%E6%96%B9%E6%B3%95.png" srcset="data:image/png;base64,666" alt="最基本的三种调制方法"></p>
 <ul>
 <li>调幅（AM）：载波的振幅随基带数字信号而变化。例如，0或1分别对应于无载波或有载波输出。</li>
@@ -474,7 +476,7 @@
 <blockquote>
 <p>详见《计算机网络》P44。</p>
 </blockquote>
-<h4><span id="146-信道的极限容量">1.4.6 信道的极限容量</span></h4>
+<h4><span id="1-4-6-xin-dao-de-ji-xian-rong-liang">1.4.6 信道的极限容量</span><a href="#1-4-6-xin-dao-de-ji-xian-rong-liang" class="header-anchor"></a></h4>
 <p>信道上传输数字信号如果速度过快会导致信号失真，所以不能一味的要求速度，必须保证传输信号的能识别度。</p>
 <p><strong>信号能够通过的频率范围</strong></p>
 <p>如果信号中的高频分量在传输时受到衰减，那么在接收端收到的波形前沿和后沿就变得不那么陡峭了，每一个码元所占的时间界限也不再是很明确的，而是前后都拖了“尾巴”。这样，在接收端收到的信号波形就失去了码元之间的清晰界限。这种现象叫码间串扰。</p>
@@ -492,7 +494,7 @@
 <p>source_picW为信道的带宽（以Hz为单位）;S为信道内所传信号的平均功率，N为信号内部的高斯噪声功率。</p>
 <p>香农公式的意义在于：只要信息传输速率低于信道的极限传输速率，就一定存在某种方法来实现无差错的传输。</p>
 </blockquote>
-<h3><span id="15-信道复用">1.5 信道复用</span></h3>
+<h3><span id="1-5-xin-dao-fu-yong">1.5 信道复用</span><a href="#1-5-xin-dao-fu-yong" class="header-anchor"></a></h3>
 <p>频分复用FDM：所有的用户在同样的时间占用不同的带宽资源（这里的“带宽”是频率带宽而不是数据的发送速率）。</p>
 <p>时分复用TDM：所有用户在不同的时间占用同样的频带带宽。</p>
 <p>统计时分复用STDM：改进的时分复用。</p>
